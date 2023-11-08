@@ -1,0 +1,138 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    border-bottom: 1px solid rgb(228, 227, 227);
+    z-index: 100;
+    /* align-items: center; */
+}
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu{
+    width: 24px;
+    margin-right: 23px;
+    margin-left: 23.5px;
+}
+.youTube-logo{
+    width: 90px;
+}
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.search-bar{
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    border-radius: 2px;
+    border: 1px solid rgb(192, 192, 192);
+    box-shadow: inset 1px 1px 1px rgb(0,0,0,0.15);
+    width: 0;
+}
+.search-bar::placeholder{
+    font-family: Roboto,Arial;
+    font-size: 16px;
+}
+.search-bar:focus{
+    outline: 1px solid blue;
+}
+.search-icon-button{
+    width:60px;
+    height: 39px;
+    border: 1px solid rgb(192, 192, 192);
+    margin-left: -1.5px;
+    background-color:rgb(242, 242, 242) ;  
+}
+.search-icon-button,.voice-search-icon-button,.upload-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-icon-button .tool-tip,.voice-search-icon-button .tool-tip,.upload-container .tool-tip{
+position: absolute;
+padding: 4px 8px;
+background-color:gray;
+font-family: Roboto,Arial;
+font-size: 12px;
+bottom: -32px;
+border-radius: 2px;
+opacity: 0;
+color: white;
+transition: opacity 0.15s;
+pointer-events: none;
+white-space: nowrap;
+}
+.search-icon-button:hover .tool-tip,.voice-search-icon-button:hover .tool-tip,.upload-container:hover .tool-tip{
+    opacity: 1;
+}
+.search-icon{
+    padding-top: 5px;
+    width: 25px;
+}
+.voice-search-icon-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:rgb(245, 245, 245) ;
+    border: none;
+    margin-left: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.voice-search-icon{
+    width: 23px;
+}
+.right-section{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.upload-icon{
+    width: 23px;
+}
+.apps-icon{
+    width: 23px;
+}
+.notification-icon{
+    width: 23px;
+}
+.ramana-image{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 25px;
+}
+.notifications-container{
+    position: relative;
+}
+.notifications{
+    background-color: rgb(226, 41, 41);
+    color: white;
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    font-family: Roboto,Arial;
+    padding: 2px 6px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+
